@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #2a80b9;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.boiling-wrapper {
+  width: 370px;
+  margin: 80px auto 0;
+  padding: 28px 24px;
+  color: #111;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.input-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boil-count-input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 240px;
+  padding: 4px 5px;
+  margin-right: 10px;
+  border-bottom: 1px solid #999;
+}
+.boil-count-input:focus {
+  border-bottom: 1px solid #222;
+}
+
+.start-boiling-btn {
+  border: none;
+  outline: none;
+  color: #111;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: #dbdbdb;
+  transition: all 0.2s ease;
+}
+.start-boiling-btn:hover {
+  background: #bbb;
+}
+
+.max-boils-alert {
+  color: #f00;
+  margin-left: 8px;
+  text-shadow: 0 0 5px rgb(0 0 0 / 23%);
+}
+
+.boil-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.boil {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0px 8px 0 0;
+  color: #fff;
+  background: rgb(250, 162, 0);
+  border-radius: 50%;
+
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
